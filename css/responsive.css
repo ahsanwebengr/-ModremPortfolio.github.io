@@ -1,0 +1,86 @@
+@media (max-width : 992px) {
+    html{
+        font-size: 60.5%;
+    }
+
+   
+}
+@media (max-width : 768px) {
+    html{
+        font-size: 55.5%;
+    }
+    .toggle{
+        display: inline-flex;
+    }
+    .navbar .menu-bar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding-top: 7rem;
+        transition: all 0.5s linear;
+        background: var(--lineaer-background);
+        z-index: 999;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 2rem 0;
+    }
+    .navbar ul li a{
+        font-size: 1.8rem;
+    }
+    .navbar ul li a:hover{
+        font-size: 1.8rem;
+        color: var(--white);
+    }
+    .menu-bar.show{
+        left: 0;
+    }
+    .home .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .milestone .row{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .form-group{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+    footer .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width : 600px) {
+    html{
+        font-size: 52.5%;
+    }
+    .portfolio .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+@media (max-width : 450px) {
+    html{
+        font-size: 50.5%;
+    }
+    .milestone .row{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .services .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
